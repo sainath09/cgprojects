@@ -255,7 +255,9 @@ void renderScene(void)
 		}
 		if (flagr)
 		{
-			temp = { 20.0, 20.0, 20.0 };
+			temp.x=20.0;
+			temp.y=20.0;
+			temp.z=20.0;
 			camp = temp;
 			gViewMatrix = glm::lookAt(
 				glm::vec3(camp.x, camp.y, camp.z),
